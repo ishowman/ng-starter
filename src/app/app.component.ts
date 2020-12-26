@@ -6,5 +6,29 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ng-app';
+  title = "CodeSandbox";
+
+  year = 2020
+
+  list = [
+    'a',
+    'aa',
+    'b'
+  ]
+
+  upper(string) {
+    this.title = string.toUpperCase();
+  }
+  setTitle(str) {
+    console.log('str', str);
+    
+    this.title = str
+  }
+
+  setList(list) {
+    console.log('set', list);
+    
+    // this.list = list
+    this.year = list
+  }
 }
